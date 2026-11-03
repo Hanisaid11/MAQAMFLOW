@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#1e1842" />
+      <stop offset="60%" stop-color="#0c0d1c" />
+      <stop offset="100%" stop-color="#06070e" />
+    </radialGradient>
+    <linearGradient id="goldTeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  
+  <!-- Outer subtle circular sound rings -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#06b6d4" stroke-opacity="0.18" stroke-width="2" stroke-dasharray="6 6" />
+  <circle cx="256" cy="256" r="150" fill="none" stroke="#f59e0b" stroke-opacity="0.25" stroke-width="3" />
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#8b5cf6" stroke-opacity="0.15" stroke-width="1.5" />
+
+  <!-- Central Oud / Music note + Arabic Quarter Tone Half-Flat symbol (d with slashed stroke / Bayati mark) -->
+  <g filter="url(#glow)">
+    <!-- Stylized Oud Body & Soundwave -->
+    <path d="M 256 100 C 330 100 370 170 370 260 C 370 340 320 395 256 395 C 192 395 142 340 142 260 C 142 170 182 100 256 100 Z" 
+          fill="none" stroke="url(#goldTeal)" stroke-width="14" stroke-linejoin="round" />
+    
+    <!-- Central Soundhole (Shamsiyya Arabesque Rosette) -->
+    <circle cx="256" cy="275" r="42" fill="#0d1024" stroke="url(#amberGlow)" stroke-width="6" />
+    
+    <!-- Soundwave bars through the soundhole -->
+    <rect x="236" y="258" width="6" height="34" rx="3" fill="#06b6d4" />
+    <rect x="246" y="246" width="6" height="58" rx="3" fill="#f59e0b" />
+    <rect x="256" y="238" width="6" height="74" rx="3" fill="#fef08a" />
+    <rect x="266" y="246" width="6" height="58" rx="3" fill="#f59e0b" />
+    <rect x="276" y="258" width="6" height="34" rx="3" fill="#06b6d4" />
+
+    <!-- Oud Neck & Tuning Pegs Silhouette (Rising up) -->
+    <path d="M 246 100 L 246 62 L 266 62 L 266 100" stroke="#f59e0b" stroke-width="8" stroke-linecap="round" />
+    <circle cx="232" cy="72" r="5" fill="#06b6d4" />
+    <circle cx="280" cy="72" r="5" fill="#06b6d4" />
+    <circle cx="232" cy="86" r="5" fill="#06b6d4" />
+    <circle cx="280" cy="86" r="5" fill="#06b6d4" />
+
+    <!-- Quarter-tone sign (Mirrored Flat / Half flat: Sikah / Bayati symbol) -->
+    <path d="M 200 175 C 190 160 170 170 170 185 C 170 200 190 208 210 195 L 210 150" 
+          fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+    <path d="M 312 175 C 322 160 342 170 342 185 C 342 200 322 208 302 195 L 302 150" 
+          fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round" />
+  </g>
+
+  <!-- Title / Monogram subtle motif -->
+  <text x="256" y="445" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="800" font-size="34" fill="#f8fafc" letter-spacing="4">
+    MAQAM<tspan fill="#f59e0b">FLOW</tspan>
+  </text>
+  <text x="256" y="475" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="600" font-size="18" fill="#38bdf8" letter-spacing="3">
+    مقام فلو • مُدَرِّب الصوت
+  </text>
+</svg>

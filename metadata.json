@@ -1,0 +1,6 @@
+{
+  "name": "MaqamFlow & Vocal Coach",
+  "description": "Real-time Arabic Maqam and pitch detection, microtonal notation, Oud and Piano virtual practice, and AI vocal coaching.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
